@@ -13,8 +13,6 @@ public class Num {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("ÀÔ·Â°ª: ");
 		
-		
-		
 		try {
 			String br_text = br.readLine();
 			if(br_text.equals("exit")) 
@@ -84,9 +82,9 @@ public class Num {
 			br.close();
 			fileDelete(fileName);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException ie ) {
+			ie.printStackTrace();
 		}
 	}
 	
